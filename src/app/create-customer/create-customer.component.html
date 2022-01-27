@@ -1,0 +1,41 @@
+<div class="col-md-6 offset-md-3">
+    <h3> Create Customer </h3>
+    <form (ngSubmit) = "onSubmit()">
+    
+        <div class="form-group">
+            <label> customerID </label>
+            <input type="text" class ="form-control" id = "customerID"
+                [(ngModel)] = "customer.customerID" name = "customerID">
+        </div>
+    
+        <div class="form-group">
+            <label> genre </label>
+            <input type="text" class ="form-control" id = "genre"
+                [(ngModel)] = "customer.genre" name = "genre">
+        </div>
+    
+        <div class="form-group">
+            <label> age </label>
+            <input type="text" class ="form-control" id = "age"
+                [(ngModel)] = "customer.age" name = "age">
+        </div>
+        <div class="form-group">
+            <label> annual_Income </label>
+            <input type="text" class ="form-control" id = "annual_Income"
+                [(ngModel)] = "customer.annual_Income" name = "annual_Income">
+        </div>
+        <div class="form-group">
+            <label> spending_Score </label>
+            <input type="text" class ="form-control" id = "spending_Score"
+                [(ngModel)] = "customer.spending_Score" name = "spending_Score">
+        </div>
+        <div class="form-group">
+            <label> cluster </label>
+            <input type="text" class ="form-control" id = "cluster"
+                [(ngModel)] = "customer.cluster" name = "cluster">
+        </div>
+    
+        <button class = "btn btn-success" type ="submit">Submit</button>
+    
+    </form>
+    </div> 
