@@ -70,7 +70,6 @@ const myChar1 = new Chart("myChart1", {
 });
 
 
-
   }
 
 }
