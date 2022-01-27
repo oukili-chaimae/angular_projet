@@ -15,10 +15,10 @@ export class ChartsComponent implements OnInit {
     const myChart = new Chart("myChart", {
       type: 'bar',
       data: {
-          labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+          labels: ['Female', 'Male'],
           datasets: [{
-              label: '# of Votes',
-              data: [12, 19, 3, 5, 2, 3],
+              label: 'Nombre de genre',
+              data: [112, 89],
               backgroundColor: [
                   'rgba(255, 99, 132, 0.2)',
                   'rgba(54, 162, 235, 0.2)',
@@ -46,6 +46,31 @@ export class ChartsComponent implements OnInit {
           }
       }
   });
+
+  
+////////////////////////////
+const myChar1 = new Chart("myChart1", {
+    type: 'doughnut',
+    data: {
+        labels: [
+            'Female',
+            'Male',
+          ],
+        datasets: [{
+            label: 'Annual_Income',
+            data: [6636, 5476],
+            backgroundColor: [
+              'rgb(255, 99, 132)',
+              'rgb(54, 162, 235)',
+            ],
+            hoverOffset: 4
+          }]
+    },
+   
+});
+
+
+
   }
 
 }

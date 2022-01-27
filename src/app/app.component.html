@@ -1,21 +1,20 @@
 <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
   <ul class = "navbar-nav">
       <li class = "nav-item">
-          <a routerLink="customers" routerLinkActive="active" class="nav-link" >Customer List</a>
+          <a routerLink="customers" routerLinkActive="active" class="nav-link" ><button class="btn btn-primary">Customer List</button></a>
       </li>
       <li class = "nav-item">
-          <a routerLink="create-customer" routerLinkActive="active" class="nav-link" >Add Customer</a>
+          <a routerLink="create-customer" routerLinkActive="active" class="nav-link" ><button class="btn btn-primary"><i class="fas fa-plus-square"></i>Add Customer</button></a>
       </li>
   </ul>
 </nav>
 
-<h1 class="text-center"> {{title}} </h1>
 <div class = "container">
   <router-outlet></router-outlet>
   <app-charts></app-charts>
 </div>
 <footer class = "footer">
   <div class = "container">
-      <span>All Rights Reserved 2022 @SIM</span>
+      <span>All Rights Reserved SIM-2022@El-hamasi Fatima Zohra/ Oukili Chaimae</span>
   </div>
 </footer>
